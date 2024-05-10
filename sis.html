@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <style>
+        /* Reset CSS */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Global Styles */
+        body {
+            background-color: #7FC7D9;
+            color: #333;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffc107; /* Change the color on hover */
+        }
+
+        /* Content Box Styles */
+        .content-box {
+            background-color:#F9EFDB;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: absolute; /* Adjusted to absolute */
+            top: 50%; /* Adjusted to 50% from top */
+            right: 20px; /* Adjusted from the right */
+            transform: translateY(-50%); /* Adjusted to move up by half of its height */
+        }
+
+
+
+        .content-box h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-box p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content-box ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .content-box li {
+            margin-bottom: 8px;
+        }
+
+        /* Image Styles */
+        .content-img {
+            position: absolute;
+            left: 20px; /* Adjusted to 20px from the left */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .content-img img {
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="profile.jsp">Profile</a></li>
+            <li><a href="course.jsp">Courses</a></li>
+            <li><a href="attendance.jsp">Attendance</a></li>
+            <li><a href="fees.jsp">Fees</a></li>
+            <li><a href="support.jsp">Support</a></li>
+            <li><a href="logout.jsp">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Section -->
+    <div class="content-img">
+        <img src="sis.jpeg" alt="Image Description" width= 750px height=500px>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-box">
+        <h2>Welcome to the Student Information System</h2>
+        <p>Explore the various features of our system:</p>
+        <ul>
+            <li>View your Fees Structure.</li>
+            <li>Update your profile information.</li>
+            <li>Register for courses.</li>
+            <li>Mark your attendance.</li>
+            <li>Contact us directly regarding any issue.</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Student Information System.</p>
+    </footer>
+
+</body>
+</html>
